@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VoiceClaw for Sherwin-Williams: The region that caught the AI shift first</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    html, body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .accent-orange { color: #ea580c; }
+    .bg-accent-orange { background-color: #ea580c; }
+    .bg-accent-orange:hover { background-color: #c2410c; }
+    .border-accent-orange { border-color: #ea580c; }
+    .gradient-hero-text { background: linear-gradient(135deg, #ea580c 0%, #f97316 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .ring-accent-orange { --tw-ring-color: #ea580c; }
+    .glow-orange { box-shadow: 0 0 0 0 rgba(234, 88, 12, 0.5); animation: glowPulse 2s ease-in-out infinite; }
+    @keyframes glowPulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(234, 88, 12, 0.5); }
+      50% { box-shadow: 0 0 0 15px rgba(234, 88, 12, 0); }
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-900 antialiased">
+
+  <!-- Sticky Nav -->
+  <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-9 h-9 rounded-lg bg-slate-900 flex items-center justify-center">
+          <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17 2a3 3 0 013 3v4a5 5 0 01-4 4.9V22H8v-8.1A5 5 0 014 9V5a3 3 0 013-3h10zm-3 2H10v5a2 2 0 104 0V4z"/>
+          </svg>
+        </div>
+        <span class="font-bold text-lg tracking-tight">VoiceClaw</span>
+      </div>
+      <div class="flex items-center gap-6 text-sm">
+        <span class="hidden md:inline text-slate-600 font-medium tracking-wide uppercase text-xs">For Supply House Partners</span>
+        <button class="hidden md:inline-flex items-center gap-1 px-4 py-2 rounded-lg border border-slate-300 font-medium hover:bg-slate-50 transition">
+          Download Pilot Brief
+        </button>
+        <button class="inline-flex items-center gap-1 px-4 py-2 rounded-lg bg-slate-900 text-white font-medium hover:bg-slate-800 transition">
+          Schedule a Call
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="max-w-6xl mx-auto px-6 pt-20 pb-16">
+    <div class="grid md:grid-cols-5 gap-10 lg:gap-16 items-center mb-4">
+      <div class="md:col-span-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-50 border border-orange-200 mb-8">
+          <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+          <span class="text-xs font-semibold text-orange-700 uppercase tracking-wide">For Sherwin-Williams Regional &amp; Category Managers</span>
+        </div>
+        <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+          Be the region that caught the <span class="gradient-hero-text">AI shift</span> before Chicago or Denver did.
+        </h1>
+        <p class="text-lg text-slate-600 mb-10 leading-relaxed">
+          You've spent fifteen years walking into paint stores across your region, learning which painters are serious and which ones skip prep. You know which crews come in Monday morning with a Cashmere order for Tuesday's kitchen repaint and which ones swing by Saturday asking for the cheapest gallon in stock. You built those relationships. Nobody at corporate did. VoiceClaw helps your top painters stay findable in the AI-assistant era, subsidized through PaintPerks Preferred Contractor credit, with per-painter paint-volume-lift attribution you can take to your next QBR.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 mb-4">
+          <button class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-accent-orange text-white font-semibold text-base hover:shadow-lg transition-all">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            Schedule a 30-min partnership call →
+          </button>
+          <button class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-white border-2 border-slate-300 text-slate-900 font-semibold text-base hover:bg-slate-50 transition-all">
+            Download the pilot brief →
+          </button>
+        </div>
+        <p class="text-sm mb-6">
+          <a href="#pilot-math" class="inline-flex items-center gap-1.5 font-semibold text-orange-600 hover:text-orange-700 underline decoration-dashed decoration-orange-400 underline-offset-4">
+            <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2a4 4 0 014-4h6m0 0l-3-3m3 3l-3 3M3 4h4a2 2 0 012 2v12"/></svg>
+            Skip to the pilot math for a 5-painter / 6-month case →
+          </a>
+        </p>
+        <p class="text-sm text-slate-500">
+          <strong class="text-slate-700">Pilot-market-first.</strong> One region, 5 to 10 painters, 6 months, reversible. Subsidy sits in PaintPerks Preferred Contractor credit, not a new procurement line.
+        </p>
+      </div>
+      <div class="md:col-span-2">
+        <!-- Placeholder for hero image. Replace src with real image when ready. -->
+        <div class="relative rounded-2xl overflow-hidden shadow-2xl ring-1 ring-slate-200 bg-slate-100 aspect-[696/697] flex items-center justify-center">
+          <div class="text-center p-8">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-lg bg-slate-200 flex items-center justify-center">
+              <svg class="w-8 h-8 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            </div>
+            <p class="text-xs text-slate-500 font-medium uppercase tracking-wide">Hero image placeholder</p>
+            <p class="text-xs text-slate-400 mt-1">Replace with Sherwin-Williams-context image</p>
+          </div>
+        </div>
+        <p class="text-center text-xs text-slate-400 mt-3 italic">
+          The Q3 number your VP asked about.
+        </p>
+      </div>
+    </div>
+
+    <!-- Stats Row -->
+    <div class="grid grid-cols-3 gap-6 md:gap-12 mt-8 pb-4 border-t border-slate-200 pt-8">
+      <div>
+        <div class="text-3xl md:text-4xl font-extrabold tracking-tight mb-1">$2,370</div>
+        <div class="text-xs md:text-sm text-slate-500 font-medium">Max SW subsidy for a 5-painter, 6-month pilot</div>
+      </div>
+      <div>
+        <div class="text-3xl md:text-4xl font-extrabold tracking-tight mb-1">~4×</div>
+        <div class="text-xs md:text-sm text-slate-500 font-medium">Target-case ROI on subsidized spend, per painter</div>
+      </div>
+      <div>
+        <div class="text-3xl md:text-4xl font-extrabold tracking-tight mb-1">6 mo</div>
+        <div class="text-xs md:text-sm text-slate-500 font-medium">Pilot window. Reversible. Clean attribution at the end.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust / Works With Row -->
+  <section class="border-y border-slate-200 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-sm">
+      <div class="flex items-center gap-2 text-slate-600">
+        <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+        <span class="font-medium">PaintPerks credit compatible</span>
+      </div>
+      <div class="flex items-center gap-2 text-slate-600">
+        <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+        <span class="font-medium">Per-painter paint-volume-lift attribution</span>
+      </div>
+      <div class="flex items-center gap-2 text-slate-600">
+        <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+        <span class="font-medium">Pilot-market-first. Reversible.</span>
+      </div>
+      <div class="flex items-center gap-2 text-slate-600">
+        <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+        <span class="font-medium">Minimal paint-store workload</span>
+      </div>
+      <div class="flex items-center gap-2 text-slate-600">
+        <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+        <span class="font-medium">SOC 2 roadmap. Data-handling answers ready.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Section (Dark) -->
+  <section class="bg-slate-950 text-white py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-xs font-bold text-orange-400 uppercase tracking-[0.2em] mb-4">The Problem</div>
+      <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight mb-6 max-w-3xl">
+        The ground is moving under your region.
+      </h2>
+      <p class="text-slate-400 text-lg mb-12 max-w-2xl">
+        Benjamin Moore's regional team is pushing harder every quarter. PPG is piloting contractor programs you haven't seen yet. Home Depot Pro keeps chipping at the commodity end. And your VP wants a digital painter story at the next QBR you don't have yet. Underneath all of it, AI assistants are starting to book painters for homeowners before they ever open a Google tab. Your top painters don't know their lead mix is shifting. You don't know it either. When the wallet follows, it shows up in your Q3 numbers as an unexplained drag.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-5">
+        <!-- Card 1 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <div class="w-10 h-10 rounded-lg bg-orange-500/10 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+          </div>
+          <h3 class="font-bold text-base mb-2">The share-of-wallet drip</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Benjamin Moore's rep is in the same painter's truck tomorrow. PPG is quietly subsidizing spec-changes on new-construction jobs. Home Depot Pro takes the bulk commodity orders when painters price-match. Amazon Business handles the last-minute rush gallon. <span class="text-orange-400 font-semibold">Each loss is small; the aggregate is a quarter-point drag on regional paint-volume revenue</span> that you can't attribute cleanly to any single competitor.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <div class="w-10 h-10 rounded-lg bg-orange-500/10 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+          </div>
+          <h3 class="font-bold text-base mb-2">The VP asking for a digital story</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Every QBR has a slide titled something like "contractor-tech initiatives." You've been handed a mandate: <span class="text-orange-400 font-semibold">show progress on the digital contractor agenda</span>. Every vendor in your inbox is pitching the same thing. Most will be gone in a year. Your VP knows it's working. Your CFO wants the math. You need something real that ties to your number, not another pilot that dies in the middle.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <div class="w-10 h-10 rounded-lg bg-orange-500/10 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+          </div>
+          <h3 class="font-bold text-base mb-2">The AI-invisibility your painters don't feel yet</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Homeowners are asking ChatGPT, Perplexity, and Google AI to find painters before they open a Google tab. Homeowners book three estimates based on what they see online and pick middle price. Your top painters look the same online as the chuck-in-a-truck operators with a sprayer and a Craigslist ad. <span class="text-orange-400 font-semibold">Their inbound-estimate mix is shifting silently.</span> By the time their paint spend moves, your Q3 is already soft and you can't reverse it mid-year.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why VoiceClaw Section -->
+  <section class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-xs font-bold text-slate-500 uppercase tracking-[0.2em] mb-4">Why VoiceClaw</div>
+      <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight mb-6 max-w-3xl">
+        A voice-built AI receptionist for your painters. Subsidized through PaintPerks Preferred Contractor credit.
+      </h2>
+      <p class="text-slate-600 text-lg mb-12 max-w-2xl">
+        Your painters don't change how they buy. Your paint stores don't change how they sell. You get per-painter paint-volume-lift attribution, not faith, in time for your next QBR. Here's how it compares to the vendors already in your inbox.
+      </p>
+
+      <!-- Comparison Table -->
+      <div class="overflow-x-auto rounded-xl border border-slate-200">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-slate-50">
+              <th class="text-left py-4 px-6 font-semibold text-slate-600"></th>
+              <th class="py-4 px-6 bg-orange-50">
+                <div class="text-xs font-bold text-orange-600 uppercase tracking-wide mb-1">Recommended</div>
+                <div class="font-bold text-slate-900">VoiceClaw</div>
+              </th>
+              <th class="py-4 px-6 font-semibold text-slate-600">Generic answering service</th>
+              <th class="py-4 px-6 font-semibold text-slate-600">Painting CRM vendor</th>
+              <th class="py-4 px-6 font-semibold text-slate-600">Build-in-house</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200">
+            <tr>
+              <td class="py-4 px-6 font-medium text-slate-700">Who pays</td>
+              <td class="py-4 px-6 text-center bg-orange-50 font-semibold">Painter direct, SW subsidy through PaintPerks credit</td>
+              <td class="py-4 px-6 text-center text-slate-600">Painter direct</td>
+              <td class="py-4 px-6 text-center text-slate-600">Painter direct</td>
+              <td class="py-4 px-6 text-center text-slate-600">Sherwin-Williams capex</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6 font-medium text-slate-700">Attribution to your P&amp;L</td>
+              <td class="py-4 px-6 text-center bg-orange-50">Per-painter paint-volume lift</td>
+              <td class="py-4 px-6 text-center text-slate-600">None</td>
+              <td class="py-4 px-6 text-center text-slate-600">Indirect</td>
+              <td class="py-4 px-6 text-center text-slate-600">Depends on build</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6 font-medium text-slate-700">Paint-store workload</td>
+              <td class="py-4 px-6 text-center bg-orange-50">Minimal</td>
+              <td class="py-4 px-6 text-center text-slate-600">Low</td>
+              <td class="py-4 px-6 text-center text-slate-600">Moderate (training)</td>
+              <td class="py-4 px-6 text-center text-slate-600">High</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6 font-medium text-slate-700">Multi-brand neutrality</td>
+              <td class="py-4 px-6 text-center bg-orange-50">Yes. Painter can buy wherever.</td>
+              <td class="py-4 px-6 text-center text-slate-600">N/A</td>
+              <td class="py-4 px-6 text-center text-slate-600">Varies</td>
+              <td class="py-4 px-6 text-center text-slate-600">SW-only (painter resistance)</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6 font-medium text-slate-700">AI-assistant discoverability for the painter</td>
+              <td class="py-4 px-6 text-center bg-orange-50">Built in, structured data from day one</td>
+              <td class="py-4 px-6 text-center text-slate-600">No</td>
+              <td class="py-4 px-6 text-center text-slate-600">No</td>
+              <td class="py-4 px-6 text-center text-slate-600">Would need to build separately</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6 font-medium text-slate-700">Pilot structure</td>
+              <td class="py-4 px-6 text-center bg-orange-50 font-semibold">5-10 painters, 6 months, reversible</td>
+              <td class="py-4 px-6 text-center text-slate-600">Per-painter rollout</td>
+              <td class="py-4 px-6 text-center text-slate-600">12-month contract typical</td>
+              <td class="py-4 px-6 text-center text-slate-600">12-24 month build</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6 font-medium text-slate-700">Time to QBR-ready numbers</td>
+              <td class="py-4 px-6 text-center bg-orange-50">Two quarters</td>
+              <td class="py-4 px-6 text-center text-slate-600">Unclear</td>
+              <td class="py-4 px-6 text-center text-slate-600">Four-plus quarters</td>
+              <td class="py-4 px-6 text-center text-slate-600">Six-plus quarters</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- How Model B Works -->
+  <section class="bg-stone-50 py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-xs font-bold text-slate-500 uppercase tracking-[0.2em] mb-4">How the Model B partnership works</div>
+      <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight mb-16 max-w-3xl">
+        The painter pays the vendor. Sherwin-Williams rebates when the painter clears a monthly paint-spend threshold.
+      </h2>
+
+      <div class="space-y-8">
+        <div class="flex gap-6 items-start pb-8 border-b border-slate-200">
+          <div class="text-4xl font-extrabold text-slate-300 min-w-[60px]">01</div>
+          <div>
+            <h3 class="font-bold text-lg mb-2">Painter pays VoiceClaw directly</h3>
+            <p class="text-slate-600 leading-relaxed max-w-2xl">
+              $79 per month. Anchored to what painters already pay Jobber, Housecall Pro, or PaintScout. No new procurement line on your side. The painter's billing relationship is with the vendor, not with SW. That protects the multi-brand-neutrality position your painter customers trust.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-6 items-start pb-8 border-b border-slate-200">
+          <div class="text-4xl font-extrabold text-slate-300 min-w-[60px]">02</div>
+          <div>
+            <h3 class="font-bold text-lg mb-2">Sherwin-Williams credits the rebate through PaintPerks</h3>
+            <p class="text-slate-600 leading-relaxed max-w-2xl">
+              Pilot tuning: a $5,000-per-month SW paint-spend threshold unlocks the full $79 monthly rebate through PaintPerks Preferred Contractor credit. Graduated tiers are an option if you want finer control (25% rebate at $2-3K, 50% at $3-5K, 100% at $5K+). The rebate lives in your existing PaintPerks loyalty structure. Not a software-procurement conversation.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-6 items-start pb-8 border-b border-slate-200">
+          <div class="text-4xl font-extrabold text-slate-300 min-w-[60px]">03</div>
+          <div>
+            <h3 class="font-bold text-lg mb-2">VoiceClaw reports per-painter paint-volume-lift attribution</h3>
+            <p class="text-slate-600 leading-relaxed max-w-2xl">
+              Each pilot painter's monthly SW paint spend is measured against a pre-pilot baseline. Lift attributable to the VoiceClaw subsidy shows up in a monthly report you can drop into a QBR slide. Two quarters of clean data. Math, not faith.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-6 items-start">
+          <div class="text-4xl font-extrabold text-slate-300 min-w-[60px]">04</div>
+          <div>
+            <h3 class="font-bold text-lg mb-2">Pilot-market-first. Reversible. Region-contained.</h3>
+            <p class="text-slate-600 leading-relaxed max-w-2xl">
+              5 to 10 painters in your region. 6 months. If the numbers don't land, the pilot ends. No multi-year commitment. No national rollout without regional proof. Your paint stores don't train on anything new. Your reps don't change their motion. The only people whose workflow changes are the pilot painters themselves, and only to answer more calls and book more jobs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pilot Math Section -->
+  <section id="pilot-math" class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-start">
+        <div>
+          <div class="text-xs font-bold text-slate-500 uppercase tracking-[0.2em] mb-4">The Pilot Math</div>
+          <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight mb-6">
+            <span class="accent-orange">$2,370</span> max subsidy. Inside a Regional Manager's discretionary rebate authority.
+          </h2>
+          <p class="text-slate-600 text-lg leading-relaxed mb-6">
+            Numbers for a 5-painter, 6-month pilot in one region. Sensitivity and assumption notes below. These figures are a working sketch to anchor a first conversation, not a negotiated commitment.
+          </p>
+          <p class="text-sm text-slate-500 mb-4">
+            The $2,370 subsidy sits comfortably inside any Regional Manager's discretionary authority at a company Sherwin-Williams's size. It's not a capital expenditure. It's not a software procurement. It's an existing rebate-line decision with a measurable return.
+          </p>
+          <p class="text-sm text-slate-500">
+            SW gross margin on paint assumed at 40% per public 10-K filings (SW is a manufacturer-retailer hybrid, stronger margins than pure distributors). Painter share-of-wallet shift modeled at $1,000-2,000/month incremental SW spend. Both assumptions are tunable; both are defensible on sensitivity.
+          </p>
+        </div>
+
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-2">
+          <div class="divide-y divide-slate-200">
+            <div class="px-5 py-4 bg-white rounded-lg mb-1">
+              <div class="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Pilot cost</div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-700">PaintPerks subsidy (5 painters &times; $79 &times; 6 months)</span>
+                <span class="font-bold">$2,370</span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between px-5 py-4">
+              <span class="text-slate-700">Floor-case gross profit return</span>
+              <span class="font-bold">~$1,230</span>
+            </div>
+            <div class="flex items-center justify-between px-5 py-4">
+              <span class="text-slate-700">Target-case gross profit return</span>
+              <span class="font-bold">~$9,630</span>
+            </div>
+            <div class="flex items-center justify-between px-5 py-4">
+              <span class="text-slate-700">Upside-case gross profit return</span>
+              <span class="font-bold">$30,000+</span>
+            </div>
+            <div class="flex items-center justify-between px-5 py-4 bg-orange-50 rounded-lg">
+              <span class="font-bold">Target-case pilot ROI</span>
+              <span class="font-extrabold text-orange-600">~4&times;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-16 grid md:grid-cols-2 gap-10">
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-8">
+          <div class="text-xs font-bold text-slate-500 uppercase tracking-[0.2em] mb-3">Regional scale (year 1)</div>
+          <h3 class="text-2xl font-extrabold tracking-tight leading-tight mb-4">50 painters across one region, 12 months</h3>
+          <div class="space-y-2 text-sm">
+            <div class="flex justify-between"><span class="text-slate-600">PaintPerks subsidy</span><span class="font-semibold">$47,400</span></div>
+            <div class="flex justify-between"><span class="text-slate-600">Target-case gross profit return</span><span class="font-semibold">~$192,600</span></div>
+            <div class="flex justify-between pt-2 border-t border-slate-300"><span class="font-semibold text-slate-900">Net to region</span><span class="font-bold text-orange-600">+$145,200</span></div>
+          </div>
+          <p class="text-xs text-slate-500 mt-4 leading-relaxed">The number you defend to your VP in the Q2 QBR as validated regional momentum.</p>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-8">
+          <div class="text-xs font-bold text-slate-500 uppercase tracking-[0.2em] mb-3">National scale (year 2-3)</div>
+          <h3 class="text-2xl font-extrabold tracking-tight leading-tight mb-4">2,000 painters across SW's footprint</h3>
+          <div class="space-y-2 text-sm">
+            <div class="flex justify-between"><span class="text-slate-600">PaintPerks subsidy (annual)</span><span class="font-semibold">~$1.9M</span></div>
+            <div class="flex justify-between"><span class="text-slate-600">Target-case gross profit return</span><span class="font-semibold">~$7.7M</span></div>
+            <div class="flex justify-between pt-2 border-t border-slate-300"><span class="font-semibold text-slate-900">Net to SW</span><span class="font-bold text-orange-600">+$5.8M/year</span></div>
+          </div>
+          <p class="text-xs text-slate-500 mt-4 leading-relaxed">The story your VP takes to the CFO after two quarters of regional-pilot validation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Six value mechanisms -->
+  <section class="py-24 bg-slate-50 border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-xs font-bold text-slate-500 uppercase tracking-[0.2em] mb-4">Share-of-wallet mechanisms</div>
+      <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight leading-tight mb-6 max-w-3xl">
+        Six ways a funded VoiceClaw pilot lifts SW's share of the painter's paint wallet.
+      </h2>
+      <p class="text-slate-600 text-lg mb-12 max-w-2xl">
+        The subsidy is the explicit mechanism. But the painter's buying behavior also shifts in six structural ways that are worth naming explicitly before any QBR conversation.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-5">
+        <div class="bg-white border border-slate-200 rounded-xl p-6">
+          <div class="text-xs font-bold text-orange-600 uppercase tracking-wide mb-2">1. SW-default product specification on estimates</div>
+          <p class="text-slate-700 leading-relaxed text-sm">Pilot painters can opt into SW-preferred product defaults when VoiceClaw qualifies an inbound job and feeds the estimate template. Interior line, exterior line, sheen selection. The painter overrides when it matters; the defaults nudge share-of-wallet when it doesn't.</p>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-xl p-6">
+          <div class="text-xs font-bold text-orange-600 uppercase tracking-wide mb-2">2. SW branding on the painter's site</div>
+          <p class="text-slate-700 leading-relaxed text-sm">"PaintPerks Preferred Contractor" badge on pilot painters' VoiceClaw-built sites. Homeowners see the signal. Painters get the legitimacy. SW gets the brand surface at the homeowner-discovery moment.</p>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-xl p-6">
+          <div class="text-xs font-bold text-orange-600 uppercase tracking-wide mb-2">3. Certified-contractor badge reinforcement</div>
+          <p class="text-slate-700 leading-relaxed text-sm">Preferred Contractor status, licensed and insured, PCA Accredited if held, years in business. Surfaced in search results, AI-assistant answers, and the painter's Google Business Profile. SW's loyalty tiers become visible where homeowners actually decide.</p>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-xl p-6">
+          <div class="text-xs font-bold text-orange-600 uppercase tracking-wide mb-2">4. Estimate-line-item SW products</div>
+          <p class="text-slate-700 leading-relaxed text-sm">When VoiceClaw helps qualify a job and feeds an estimate template, SW product lines populate by default where the painter hasn't specified. Homeowner-visible line items. Painter can override; most won't on commodity items.</p>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-xl p-6">
+          <div class="text-xs font-bold text-orange-600 uppercase tracking-wide mb-2">5. PaintPerks credit as the subsidy vehicle</div>
+          <p class="text-slate-700 leading-relaxed text-sm">Reroutes the SW subsidy through your existing loyalty infrastructure. The painter's monthly $79 becomes a PaintPerks line he already watches. Measurement, attribution, and budget authority all live in the program you already run.</p>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-xl p-6">
+          <div class="text-xs font-bold text-orange-600 uppercase tracking-wide mb-2">6. Attribution loop only SW can own</div>
+          <p class="text-slate-700 leading-relaxed text-sm">Per-painter paint-volume baseline versus post-pilot spend. Lift attributable to the subsidy, measured and reported monthly. The data lives between VoiceClaw and SW. Benjamin Moore or PPG can't reproduce the attribution without reproducing the pilot.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-24 bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="text-xs font-bold text-slate-500 uppercase tracking-[0.2em] mb-4">Common questions</div>
+      <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight mb-12">
+        The questions a Regional Manager actually asks.
+      </h2>
+      <div class="space-y-6">
+        <details class="group border-b border-slate-200 pb-6">
+          <summary class="flex items-center justify-between cursor-pointer font-semibold text-lg">
+            Why shouldn't Sherwin-Williams just build this ourselves?
+            <span class="transition-transform group-open:rotate-45 text-2xl text-slate-400">+</span>
+          </summary>
+          <p class="text-slate-600 mt-4 leading-relaxed">
+            Three reasons. First, an SW-only tool would fail with the painter cohort that also buys Benjamin Moore, PPG, and Home Depot Pro on certain jobs. Those painters wouldn't adopt a walled-garden solution. Multi-brand neutrality is the moat that makes painter adoption possible. Second, building takes 18-24 months of engineering; the AI-discoverability shift is happening in 2026-2027. By the time you ship, your painters' inbound-estimate mix has already moved. Third, software isn't SW's core business. PaintScout, Jobber, and Housecall Pro all beat paint-brand-adjacent contractor software because they could focus. Subsidizing a neutral vendor that lifts your share-of-wallet is structurally safer than building in-house.
+          </p>
+        </details>
+        <details class="group border-b border-slate-200 pb-6">
+          <summary class="flex items-center justify-between cursor-pointer font-semibold text-lg">
+            What happens if the pilot fails?
+            <span class="transition-transform group-open:rotate-45 text-2xl text-slate-400">+</span>
+          </summary>
+          <p class="text-slate-600 mt-4 leading-relaxed">
+            The pilot ends. No multi-year commitment. No national rollout obligation. The 5-10 pilot painters keep their sites and keep paying the $79 monthly themselves, or cancel. Your $2,370 subsidy is spent. The attribution data lives in your internal BI either way. Worst case for you: a clean QBR slide that says "we tested it, the math didn't work, here's what we learned." Better than most pilots you've seen.
+          </p>
+        </details>
+        <details class="group border-b border-slate-200 pb-6">
+          <summary class="flex items-center justify-between cursor-pointer font-semibold text-lg">
+            Do we have to give an exclusive? What about Benjamin Moore or PPG?
+            <span class="transition-transform group-open:rotate-45 text-2xl text-slate-400">+</span>
+          </summary>
+          <p class="text-slate-600 mt-4 leading-relaxed">
+            No exclusive. Ever. Multi-brand neutrality is structural. The product has to work across paint brands or painters won't adopt it. SW can run PaintPerks-branded pilots in your regions. Benjamin Moore or PPG could run their own parallel pilots in their regions. The attribution is per-partner, so each partner owns its own data. First-mover advantage is real (you get the pilot data first, the QBR story first, the case study first) but exclusivity isn't on the table.
+          </p>
+        </details>
+        <details class="group border-b border-slate-200 pb-6">
+          <summary class="flex items-center justify-between cursor-pointer font-semibold text-lg">
+            What do my paint stores actually have to do?
+            <span class="transition-transform group-open:rotate-45 text-2xl text-slate-400">+</span>
+          </summary>
+          <p class="text-slate-600 mt-4 leading-relaxed">
+            Nothing operational. Store managers don't train. Counter staff don't pitch. Inside sales doesn't call-down a list. The pilot painters are identified by you and your top store managers based on who would benefit, then onboarded directly by VoiceClaw in a single 5-minute phone call. The stores see the PaintPerks spend tick up over the pilot months as the mechanism works. That's the extent of store involvement.
+          </p>
+        </details>
+        <details class="group border-b border-slate-200 pb-6">
+          <summary class="flex items-center justify-between cursor-pointer font-semibold text-lg">
+            Data handling, privacy, SOC 2, customer data residency?
+            <span class="transition-transform group-open:rotate-45 text-2xl text-slate-400">+</span>
+          </summary>
+          <p class="text-slate-600 mt-4 leading-relaxed">
+            SOC 2 Type I is on the roadmap pre-national-scale. For the pilot phase: pilot painters own their own customer data; SW sees aggregate, anonymized paint-volume attribution, not homeowner-level data; no PII flows to SW. Call recordings stay with the painter. Attribution flows are auditable. Data-processing agreement and standard privacy addendum available on request before the pilot signs.
+          </p>
+        </details>
+        <details class="group border-b border-slate-200 pb-6">
+          <summary class="flex items-center justify-between cursor-pointer font-semibold text-lg">
+            How does this fit my QBR rhythm?
+            <span class="transition-transform group-open:rotate-45 text-2xl text-slate-400">+</span>
+          </summary>
+          <p class="text-slate-600 mt-4 leading-relaxed">
+            Pilot kickoff in a given quarter produces a baseline month of painter paint-volume data, then four to five months of post-pilot data, with a clean attribution report delivered two weeks before your next QBR. The metrics roll up to "participating-painter SW-spend lift," which fits directly into your existing regional revenue narrative without needing a separate slide category. The 6-month window is designed around your rhythm, not imposed on it.
+          </p>
+        </details>
+        <details class="group border-b border-slate-200 pb-6">
+          <summary class="flex items-center justify-between cursor-pointer font-semibold text-lg">
+            Have you run this with another supply house already?
+            <span class="transition-transform group-open:rotate-45 text-2xl text-slate-400">+</span>
+          </summary>
+          <p class="text-slate-600 mt-4 leading-relaxed">
+            The Model B mechanism is conceptually applied across trades, with partner-specific attribution kept confidential between us and each partner. SW is where the active implementation work is concentrated. Comparable structural work is available for review if you want to see how the mechanism generalizes; partner-specific data stays between us and them.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA (Dark) -->
+  <section class="bg-slate-950 text-white py-24">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight mb-6">
+        Be the region that <span class="accent-orange">brought it to Sherwin first</span>.
+      </h2>
+      <p class="text-slate-400 text-lg mb-10 leading-relaxed max-w-2xl mx-auto">
+        5 to 10 pilot painters. 6 months. $2,370 subsidy inside your discretionary PaintPerks authority. One clean QBR slide at the end. You stay focused on your region. We make sure your top painters stay findable before Benjamin Moore or PPG even notice the problem.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <button class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-lg bg-accent-orange text-white font-semibold text-base shadow-lg hover:shadow-xl transition-all">
+          Schedule a 30-min partnership call →
+        </button>
+        <button class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-lg bg-transparent border-2 border-slate-600 text-white font-semibold text-base hover:bg-slate-900 transition-all">
+          Download the pilot brief →
+        </button>
+      </div>
+      <p class="text-sm text-slate-500 mt-6">
+        Warm introduction from a manufacturer partner or an SW peer is welcome. Cold outreach works too.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-500 py-8 border-t border-slate-900">
+    <div class="max-w-6xl mx-auto px-6 text-center text-xs">
+      VoiceClaw: voice-built AI receptionist for trades. For supply-house Regional and Category Managers who want the digital-contractor story before their peers have it.
+    </div>
+  </footer>
+
+</body>
+</html>
